@@ -62,7 +62,14 @@
     @media (max-width: 880px) {
       .hero { grid-template-columns: 1fr; }
     }
- .portrait{width:100%;border-radius:12px;margin-bottom:12px;object-fit:cover;aspect-ratio:4/3;}
+ .portrait{
+  width:100%;
+  height:auto;          /* 关键：按原比例显示 */
+  border-radius:12px;
+  margin-bottom:12px;
+  display:block;
+}
+
  </style>
 </head>
 <body>
@@ -95,7 +102,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="og-image.jpg" alt="Catharina Lewenhaupt" class="portrait">
+    <img src="portrait-inline.jpg?v=1" alt="Catharina Lewenhaupt" class="portrait" loading="lazy" decoding="async">
       <h2>Snapshot</h2>
       <div class="list">
         <div class="item">
