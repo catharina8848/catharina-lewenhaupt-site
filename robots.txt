@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://catharina8848.github.io/catharina-lewenhaupt-site/sitemap.xml
